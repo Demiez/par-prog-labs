@@ -1,9 +1,20 @@
 ### par-prog-labs
 
-#####Середовище розробки: Visual Studio Ent 2019, C++ Console App, win.ver 10
-#####Entry point: main(), допоміжні методи розділені коментами із завданням
-#####Лінк на GitHub: https://github.com/Demiez/par-prog-labs.git
+#####  Середовище розробки:
+Visual Studio Ent 2019, C++ Console App, win.ver 10 
+<br>
 
+##### Entry point: 
+main(), допоміжні методи розділені коментами із завданням
+<br>
+
+#####Лінк на GitHub: 
+https://github.com/Demiez/par-prog-labs.git
+<br>
+
+#####Увага
+при перегляді файлів .cpp через браузер на GitHub українська мова не відображається, треба клонувати репозиторій собі або загрузити в архіві zip
+<br>
 
 #### Перша лабораторна робота lab01
 МЕТОДИ ВИЗНАЧЕННЯ ОБЧИСЛЮВАЛЬНОЇ СКЛАДНОСТІ ПРОГРАМ
