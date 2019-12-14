@@ -364,10 +364,10 @@ int main()
 	T(30000)/T(10000) clock: 3.082754 s
 	*/
 
-	//CalculateMatrix(64);
-	//CalculateMatrix(512);
+	CalculateMatrix(64);
+	CalculateMatrix(512);
 	CalculateMatrix(1024);
-	//CalculateMatrix(2048);
+	CalculateMatrix(2048);
 
 
 	/* 5,6,7,8,9,10 - Викнонано разом
@@ -407,14 +407,14 @@ int main()
 	object: 143.0191
 	Прискорення виконання пов'язане з тим, що відповідно офіційної документації(https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019), release конфігурація не має інформації про налагодження програми і є повністю оптимізованою.
 
-	для 9 завдання використані різні типи даних для матриці 1024 int8, int16, int32, __int64, float, double (аргумент так команди функції змінено назад на int для демонстрації попередніх завдань
+	для 9 завдання використані різні типи даних для матриці 1024 int8, int16, int32, __int64, float, double (аргумент та команди функції змінено назад на int для демонстрації попередніх завдань)
 	Результати
 	__int8	12.9677
-	__int16	5.8571 s
-	__int32	6.1399 s
-	__int64	8.1113 s
-	float	7.0561 s
-	double	9.6052 s
+	__int16	13.1252
+	__int32	13.4119
+	__int64	14.2433
+	float	13.9117
+	double	14.9365
 
 	для 10 завдання в папці lab01 для одного типу даних використано Performance Instrumentation Profiler(Report20191214-1315.vsps) 
 	*/
