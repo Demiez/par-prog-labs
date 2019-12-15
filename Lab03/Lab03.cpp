@@ -437,7 +437,7 @@ int main()
 	*/
 	std::cout << "\nFunction for different data types 4096*4096 =>";
 	int N = 4096 * 4096;
-	//ResultFuncNoSIMD(N);
+	ResultFuncNoSIMD(N);
 	/* Разом 2,3,4,5 - закоменчені рядки, де виникає error. Результат:
 		Int8 time: 5.234549 s
 		Int16 time: 5.380987 s
@@ -453,7 +453,7 @@ int main()
 		Висновок: Таким чином, завдяки використанню SIMD команд час виконання став значно швидшим. Крім того, у випадку int64 SSE => Illegal Instruction Error
 	*/
 	std::cout << "\n Square without and with SIMD 4096*4096 =>";
-	//SquareSIMD(N);
+	SquareSIMD(N);
 	/* Разом 6,7 Результат
 		FLOAT time: 31.323399 s
 		DOUBLE time: 22.117894 s
@@ -475,7 +475,11 @@ int main()
 	print_4_num(_mm_srli_epi32(_4, 1));
 	/*
 	Результат
-
+	Shift to the right =>
+	 2 4 8 16 32 64 128 1 2 4 8 16 32 64 128 0
+	 512 1024 2048 4096 8192 16384 32768 0
+	 0 8192 0 16384
+	 8 0 16 0
 	*/
 }
 
